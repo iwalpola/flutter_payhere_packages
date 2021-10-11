@@ -1,6 +1,8 @@
-# Flutter SDK
+# Flutter PayHere
+### Flutter Wrapper for PayHere SDKs ###
 
-Integrating PayHere with your Flutter App is super easy with our PayHere Flutter SDK. You just have to include the package in your project dependencies, call its methods to initiate a payment and fetch the payment status just after the payment. The beauty is, this SDK allows you to accept a payment within your app, without redirecting your app user to the web browser.
+Integrating PayHere with your Flutter App is super easy with Flutter PayHere. You just have to include the package in your project dependencies, call its methods to initiate a payment and fetch the payment status just after the payment. For mobile, this package allows you to accept a payment within your app, without redirecting your app user to the web browser.
+For web this package allows a popup to open, which can handle a payment.
 
 ## Usage ##
 
@@ -58,7 +60,22 @@ Run the following command in your iOS Project.
 pod install
 ```
 
-### 4. Whitelist Mobile App Package Name ###
+### 4. Web Pre-requisites ###
+a. Copy payhere.js and payhere_flutter.js from here [1] to {your project}/web
+b. Add the following lines at the end of {your project}/web/index.html
+```
+ </script>
+  <script src="payhere.js"></script>
+  <script src="payhere_flutter.js"></script>
+</body>
+</html>
+```
+c. Change the base_href property in the same index.html file
+```
+  <base href="/">
+```
+
+### 5. Whitelist Mobile App Package Name ###
 
 a. Login to your PayHere Merchant Account and navigate to Settings  > Domains and Credentials.
 
