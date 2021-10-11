@@ -82,9 +82,9 @@ class _AppState extends State<App> {
       "custom_2": ""
     };
 
-    await _payherePlugin.startPayment(paymentObject, (paymentId) {
-      print("One Time Payment Success. Payment Id: $paymentId");
-      showAlert(context, "Payment Success!", "Payment Id: $paymentId");
+    await _payherePlugin.startPayment(paymentObject, (orderId) {
+      print("One Time Payment Success. Order Id: $orderId");
+      showAlert(context, "Payment Success!", "Order Id: $orderId");
     }, (error) {
       print("One Time Payment Failed. Error: $error");
       showAlert(context, "Payment Failed", "$error");
@@ -120,9 +120,9 @@ class _AppState extends State<App> {
       "custom_2": ""
     };
 
-    await _payherePlugin.startPayment(paymentObject, (paymentId) {
-      print("Recurring Payment Success. Payment Id: $paymentId");
-      showAlert(context, "Payment Success!", "Payment Id: $paymentId");
+    await _payherePlugin.startPayment(paymentObject, (orderId) {
+      print("Recurring Payment Success. Order Id: $orderId");
+      showAlert(context, "Payment Success!", "Order Id: $orderId");
     }, (error) {
       print("Recurring Payment Failed. Error: $error");
       showAlert(context, "Payment Failed", "$error");
@@ -151,9 +151,9 @@ class _AppState extends State<App> {
       "country": "Sri Lanka",
     };
 
-    await _payherePlugin.startPayment(paymentObject, (paymentId) {
-      print("Tokenization Payment Success. Payment Id: $paymentId");
-      showAlert(context, "Payment Success!", "Payment Id: $paymentId");
+    await _payherePlugin.startPayment(paymentObject, (orderId) {
+      print("Tokenization Payment Success. Order Id: $orderId");
+      showAlert(context, "Payment Success!", "Order Id: $orderId");
     }, (error) {
       print("Tokenization Payment Failed. Error: $error");
       showAlert(context, "Payment Failed", "$error");
