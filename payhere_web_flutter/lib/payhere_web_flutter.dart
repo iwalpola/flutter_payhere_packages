@@ -2,8 +2,9 @@
 library payhere_web_flutter;
 
 import 'dart:convert';
-import 'dart:developer';
+//import 'dart:developer';
 import 'package:js/js.dart';
+import 'package:js/js_util.dart' as jsutil;
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:payhere_platform_interface/payhere_platform_interface.dart';
 
@@ -40,5 +41,5 @@ class PayHereJS {
   @JS('setOnDismissed')
   external static setOnDismissed(PayHereOnDismissedHandler handler);
   @JS('startPayment')
-  external static Future<void> startPaymentJS(String paymentObject);
+  external static Future<void> startPaymentJS(Object paymentObject);
 }
