@@ -11,10 +11,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_payhere_platform_interface: 
-    path: ../flutter_payhere_platform_interface
-  flutter_payhere_web: 
-    path: ../flutter_payhere_web
+  flutter_payhere_platform_interface:
+    git:
+      url: git://github.com/iwalpola/flutter_payhere.git
+      path: flutter_payhere_platform_interface
+  flutter_payhere_web:
+    git:
+      url: git://github.com/iwalpola/flutter_payhere.git
+      path: flutter_payhere_web
   
 
 dev_dependencies:

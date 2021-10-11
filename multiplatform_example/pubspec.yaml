@@ -12,13 +12,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_payhere:
-    # When depending on this package from a real application you should use:
-    #   payhere_web_flutter: ^x.y.z
-    # See https://dart.dev/tools/pub/dependencies#version-constraints
-    # The example app is bundled with the plugin so we use a path dependency on
-    # the parent directory to use the current plugin's version.
-    path: ../flutter_payhere
+  flutter_payhere_web:
+    git:
+      url: git://github.com/iwalpola/flutter_payhere.git
+      path: flutter_payhere
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
