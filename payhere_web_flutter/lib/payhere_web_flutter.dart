@@ -1,9 +1,10 @@
 @JS()
 library payhere_web_flutter;
 
-import 'dart:convert';
-import 'dart:developer';
+//import 'dart:convert';
+//import 'dart:developer';
 import 'package:js/js.dart';
+import 'package:js/js_util.dart' as jsutil;
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:payhere_platform_interface/payhere_platform_interface.dart';
 
@@ -23,8 +24,17 @@ class PayHerePlugin extends PayHerePlatform {
     PayHereJS.onCompleted = allowInterop(onCompleted);
     PayHereJS.onError = allowInterop(onError);
     PayHereJS.onDismissed = allowInterop(onDismissed);
-    print(json.encode(paymentObject));
-    await PayHereJS.startPaymentJS(json.encode(paymentObject));
+    await PayHereJS.startPaymentJS(mapToJSObj(paymentObject));
+  }
+
+  Object mapToJSObj(Map<dynamic, dynamic> a) {
+    var object = jsutil.newObject();
+    a.forEach((k, v) {
+      var key = k;
+      var value = v;
+      jsutil.setProperty(object, key, value);
+    });
+    return object;
   }
 }
 
@@ -37,5 +47,5 @@ class PayHereJS {
   @JS('onDismissed')
   external static PayHereOnDismissedHandler onDismissed;
   @JS('startPayment')
-  external static Future<void> startPaymentJS(String paymentObject);
+  external static Future<void> startPaymentJS(Object paymentObject);
 }
