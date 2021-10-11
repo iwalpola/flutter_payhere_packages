@@ -61,7 +61,7 @@ pod install
 ```
 
 ### 4. Web Pre-requisites ###
-a. Copy payhere.js and payhere_flutter.js from here [1] to {your project}/web
+a. Copy payhere.js and payhere_flutter.js from [this folder](https://github.com/iwalpola/flutter_payhere/tree/master/multiplatform_example/web) to {your project}/web
 b. Add the following lines at the end of {your project}/web/index.html
 ```
  </script>

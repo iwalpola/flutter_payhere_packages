@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  flutter_payhere_web:
+  flutter_payhere:
     git:
       url: git://github.com/iwalpola/flutter_payhere.git
       path: flutter_payhere
