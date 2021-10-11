@@ -4,7 +4,6 @@ library payhere_web_flutter;
 import 'dart:convert';
 //import 'dart:developer';
 import 'package:js/js.dart';
-import 'package:js/js_util.dart' as jsutil;
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 import 'package:payhere_platform_interface/payhere_platform_interface.dart';
 
@@ -27,7 +26,7 @@ class PayHerePlugin extends PayHerePlatform {
     PayHereJS.setOnCompleted(allowInterop(onCompleted));
     PayHereJS.setOnError(allowInterop(onError));
     PayHereJS.setOnDismissed(allowInterop(onDismissed));
-    print(json.encode(paymentObject));
+    // print(json.encode(paymentObject));
     await PayHereJS.startPaymentJS(json.encode(paymentObject));
   }
 }
