@@ -62,11 +62,44 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_payhere:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.0"
+  flutter_payhere_platform_interface:
+    dependency: transitive
+    description:
+      path: "../../flutter_payhere_platform_interface"
+      relative: true
+    source: path
+    version: "1.0.0"
+  flutter_payhere_web:
+    dependency: transitive
+    description:
+      path: "../../flutter_payhere_web"
+      relative: true
+    source: path
+    version: "1.0.0"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  js:
+    dependency: transitive
+    description:
+      name: js
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.6.3"
   matcher:
     dependency: transitive
     description:
@@ -88,20 +121,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.0"
-  payhere_mobilesdk_flutter:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "1.0.5"
-  payhere_platform_interface:
-    dependency: transitive
-    description:
-      path: "../../payhere_platform_interface"
-      relative: true
-    source: path
-    version: "1.0.0"
   plugin_platform_interface:
     dependency: transitive
     description:

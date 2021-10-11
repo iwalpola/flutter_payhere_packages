@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-import 'payhere_platform_interface.dart';
+import 'flutter_payhere_platform_interface.dart';
 
 //TODO: consider moving this into the class
 const MethodChannel _channel = MethodChannel('payhere_mobilesdk_flutter');

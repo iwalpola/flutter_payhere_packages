@@ -9,7 +9,7 @@ Integrating PayHere with your Flutter App is super easy with our PayHere Flutter
 Open your Flutter project's `pubspec.yaml` file and add the PayHere Flutter SDK dependency.
 ```yaml
 dependencies:
-  payhere_mobilesdk_flutter: ^1.0.4
+  flutter_payhere: ^1.0.0
 ```
 
 Then run the following commands in your Flutter project directory.
@@ -83,7 +83,7 @@ f. Click 'Request to Approve'.
 Creates a one-time payment request charged only once. To capture the payment details from your server, [read our docs](https://support.payhere.lk/api-&-mobile-sdk/payhere-checkout#2-listening-to-payment-notification).
 
 ```dart
-import 'package:payhere_mobilesdk_flutter/payhere_mobilesdk_flutter.dart';
+import 'package:flutter_payhere/flutter_payhere.dart';
 
 Map paymentObject = {
   "sandbox": true,                 // true if using Sandbox Merchant ID
@@ -126,7 +126,7 @@ Creates a subscription payment that is charged at a fixed frequency. To capture 
 Read more about Recurring Payments [in our docs](https://support.payhere.lk/faq/recurring-billing).
 
 ```dart
-import 'package:payhere_mobilesdk_flutter/payhere_mobilesdk_flutter.dart';
+import 'package:flutter_payhere/flutter_payhere.dart';
 
 Map paymentObject = {
   "sandbox": true,                 // true if using Sandbox Merchant ID
@@ -171,7 +171,7 @@ Tokenize customer card details for later usage with the [PayHere Charging API](h
 Read more about Automated Charging [in our docs](https://support.payhere.lk/faq/automated-charging).  
 
 ```dart
-import 'package:payhere_mobilesdk_flutter/payhere_mobilesdk_flutter.dart';
+import 'package:flutter_payhere/flutter_payhere.dart';
 
 Map paymentObject = {
   "sandbox": true,                 // true if using Sandbox Merchant ID

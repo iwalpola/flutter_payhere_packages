@@ -1,4 +1,4 @@
-name: payhere_web_flutter_example
+name: flutter_payhere_web_example
 description: Demonstrates how to use the payhere_web_flutter plugin.
 
 # The following line prevents the package from being accidentally published to
@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  payhere_web_flutter:
+  flutter_payhere_web:
     # When depending on this package from a real application you should use:
     #   payhere_web_flutter: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints

@@ -1,4 +1,4 @@
-name: payhere_platform_interface
+name: flutter_payhere_platform_interface
 description: A common platform interface for the PayHere Mobile and Web (Javascript) SDKs
 # NOTE: We strongly prefer non-breaking changes, even at the expense of a
 # less-clean API. See https://flutter.dev/go/platform-interface-breaking-changes

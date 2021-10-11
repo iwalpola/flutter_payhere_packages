@@ -1,18 +1,18 @@
-# payhere_platform_interface
+# flutter_payhere_platform_interface
 
-A common platform interface for the [`payhere_flutter`] plugin.
+A common platform interface for the [`flutter_payhere_`] plugin.
 
-This interface allows platform-specific implementations of the `payhere_flutter`
+This interface allows platform-specific implementations of the `flutter_payhere`
 plugin, as well as the plugin itself, to ensure they are supporting the
 same interface.
 
 # Usage
 
-To implement a new platform-specific implementation of `payhere_flutter`, extend
-[`UrlLauncherPlatform`][2] with an implementation that performs the
+To implement a new platform-specific implementation of `flutter_payhere`, extend
+[`PayHerePlatform`] with an implementation that performs the
 platform-specific behavior, and when you register your plugin, set the default
-`UrlLauncherPlatform` by calling
-`UrlLauncherPlatform.instance = MyPlatformUrlLauncher()`.
+`PayHerePlatform` by calling
+`PayHerePlatform.instance = MyPlatformPayHerePlugin()`.
 
 # Note on breaking changes
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:payhere_web_flutter/payhere_web_flutter.dart';
+import 'package:flutter_payhere_web/flutter_payhere_web.dart';
 
 void main() {
   // MaterialApp is being initialized like this,

@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:payhere_platform_interface/payhere_platform_interface.dart';
+import 'package:flutter_payhere_platform_interface/flutter_payhere_platform_interface.dart';
 
 typedef PayHereOnCompletedHandler = void Function(String paymentId);
 typedef PayHereOnErrorHandler = void Function(String error);

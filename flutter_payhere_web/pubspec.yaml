@@ -1,4 +1,5 @@
 name: flutter_payhere_web
+description: Web platform implementation of flutter_payhere
 version: 1.0.0
 publish_to: none
 
@@ -11,8 +12,8 @@ dependencies:
     sdk: flutter
   flutter_web_plugins:
     sdk: flutter
-  payhere_platform_interface: 
-    path: ../payhere_platform_interface
+  flutter_payhere_platform_interface: 
+    path: ../flutter_payhere_platform_interface
 
 dev_dependencies:
   flutter_test:
@@ -25,7 +26,10 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   plugin:
+    implements: flutter_payhere
     platforms:
       web:
         pluginClass: PayHerePlugin
-        fileName: payhere_web_flutter.dart
+        fileName: flutter_payhere_web.dart
+# for reference about implementing plugins see:
+# https://github.com/flutter/plugins/blob/master/packages/url_launcher/url_launcher_web/pubspec.yaml

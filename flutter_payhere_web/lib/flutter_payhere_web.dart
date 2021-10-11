@@ -5,7 +5,7 @@ import 'dart:convert';
 //import 'dart:developer';
 import 'package:js/js.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'package:payhere_platform_interface/payhere_platform_interface.dart';
+import 'package:flutter_payhere_platform_interface/flutter_payhere_platform_interface.dart';
 
 /// On the payhere.js web implementation, you do not get the payment Id. You only get the Order ID!
 typedef PayHereWebOnCompletedHandler = void Function(String orderId);

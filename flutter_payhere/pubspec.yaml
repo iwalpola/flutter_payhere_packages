@@ -1,19 +1,21 @@
-name: payhere_mobilesdk_flutter
+name: flutter_payhere
 description: Make PayHere payments with your Flutter App!
-version: 1.0.5
-homepage: https://github.com/PayHereLK/payhere-mobilesdk-flutter
+version: 1.0.0
+# homepage: https://github.com/PayHereLK/payhere-mobilesdk-flutter
 publish_to: none
 
 environment:
-  # sdk: ">=2.7.0 <3.0.0"
   sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  payhere_platform_interface: 
-    path: ../payhere_platform_interface
+  flutter_payhere_platform_interface: 
+    path: ../flutter_payhere_platform_interface
+  flutter_payhere_web: 
+    path: ../flutter_payhere_web
+  
 
 dev_dependencies:
   flutter_test:
@@ -27,3 +29,7 @@ flutter:
         pluginClass: PayhereMobilesdkFlutterPlugin
       ios:
         pluginClass: PayhereMobilesdkFlutterPlugin
+      web:
+        default_package: flutter_payhere_web
+# see following file for reference about organizing plugins
+# https://github.com/flutter/plugins/blob/master/packages/url_launcher/url_launcher/pubspec.yaml
