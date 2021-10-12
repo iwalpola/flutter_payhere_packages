@@ -14,7 +14,7 @@ dependencies:
     sdk: flutter
   flutter_payhere_platform_interface:
     git:
-      url: git://github.com/iwalpola/flutter_payhere.git
+      url: git://github.com/iwalpola/flutter_payhere_packages.git
       path: flutter_payhere_platform_interface
 
 dev_dependencies:

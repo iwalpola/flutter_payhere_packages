@@ -65,9 +65,9 @@ packages:
   flutter_payhere:
     dependency: "direct main"
     description:
-      path: flutter_payhere
+      path: "."
       ref: HEAD
-      resolved-ref: "1e19973f2bb74746926e2007716652aa5f6f480e"
+      resolved-ref: a0b5021295aed29411068887331979631062a275
       url: "git://github.com/iwalpola/flutter_payhere.git"
     source: git
     version: "1.0.0"

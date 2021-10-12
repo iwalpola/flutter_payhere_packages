@@ -15,7 +15,6 @@ dependencies:
   flutter_payhere:
     git:
       url: git://github.com/iwalpola/flutter_payhere.git
-      path: flutter_payhere
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

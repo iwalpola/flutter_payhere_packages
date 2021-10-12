@@ -67,8 +67,8 @@ packages:
     description:
       path: flutter_payhere_platform_interface
       ref: HEAD
-      resolved-ref: "1e19973f2bb74746926e2007716652aa5f6f480e"
-      url: "git://github.com/iwalpola/flutter_payhere.git"
+      resolved-ref: b0c23b9de730a012dd7e352ace9e8f0f56cf49e5
+      url: "git://github.com/iwalpola/flutter_payhere_packages.git"
     source: git
     version: "1.0.0"
   flutter_test:
