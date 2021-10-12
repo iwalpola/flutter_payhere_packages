@@ -5,4 +5,5 @@
 I have modified the payhere_mobilesdk_flutter to be async, and the platform interface also currently treats startPayment()
 as an async function.
 
-"payhere_mobilesdk_flutter" folder has also been renamed to "flutter_payhere". It would be better if it is imported into this project as a git submodule from your official repository.
+Original "payhere_mobilesdk_flutter" Package has been refactored and imported as a git submodule
+(to preserve commit history)
